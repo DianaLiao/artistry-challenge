@@ -1,0 +1,8 @@
+<h1>All the Artists We Got</h1>
+<ul>
+  <% @artists.each do |artist| %>
+    <li><%= link_to artist.name, artist_path(artist.id)%></li>
+  <% end %>
+</ul>
+
+<%= render 'shared/end_links' %>

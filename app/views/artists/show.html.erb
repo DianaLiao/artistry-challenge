@@ -1,0 +1,12 @@
+<h1><%= @artist.name %></h1>
+Title: <%= @artist.title %><br>
+Age: <%= @artist.age %><br>
+
+Instrument specialties:
+<ul>
+<% @artist.instruments.each do |inst|%>
+  <li><%= inst.name %></li>
+<% end %>
+</ul>
+
+<%= render 'shared/end_links' %>

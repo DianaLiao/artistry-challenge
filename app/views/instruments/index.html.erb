@@ -1,0 +1,11 @@
+<h1>We got instruments, y'all</h1>
+<table>
+  <tr><th>Instrument</th><th>Classification</th></tr>
+  <% @instruments.each do |inst| %>
+    <tr>
+      <td><%= inst.name %></td>
+      <td><%= inst.classification %></td>
+    </tr>
+  <% end %>
+</table>
+<%= render 'shared/end_links' %>
